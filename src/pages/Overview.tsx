@@ -62,7 +62,7 @@ export default function Overview() {
         </div>
 
         {/* Food Table */}
-        <div className="bg-white rounded-xl shadow-sm overflow-x-auto">
+        <div className="bg-gray-100 overflow-x-auto">
           <table className="min-w-full text-sm text-left">
             <thead className="bg-gray-100 text-gray-600 uppercase text-xs">
               <tr>
@@ -73,12 +73,13 @@ export default function Overview() {
                 <th className="px-4 sm:px-6 py-3">Carbs</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="bg-black">
               {[
+                { food: "Burger", meal: "Pizza Burger", cal: "180 kcal", pri: "01:00 AM", carb: "18 gm" },
                 { food: "Burrito", meal: "Pizza Burger", cal: "200 kcal", pri: "01:00 AM", carb: "20 gm" },
                 { food: "Burger", meal: "Pizza Burger", cal: "180 kcal", pri: "01:00 AM", carb: "18 gm" },
               ].map((item) => (
-                <tr key={item.food} className="border-b last:border-none">
+                <tr key={item.food} className="bg-white shadow-2xs not-odd:bg-gray-100">
                   <td className="px-4 sm:px-6 py-3">{item.food}</td>
                   <td className="px-4 sm:px-6 py-3">{item.meal}</td>
                   <td className="px-4 sm:px-6 py-3">{item.cal}</td>
@@ -94,7 +95,7 @@ export default function Overview() {
       {/* Right Column */}
       <div className="lg:col-span-4 space-y-6">
         {/* Schedule */}
-        <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+        <div className="bg-inherit p-4 sm:p-6">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-base sm:text-lg font-semibold">My Schedule</h3>
             <button className="text-orange-500 text-sm">View All</button>
@@ -107,7 +108,7 @@ export default function Overview() {
         </div>
 
         {/* Goals */}
-        <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+        <div className="bg-inherit p-4 sm:p-6">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-base sm:text-lg font-semibold">Goals</h3>
             <button className="text-orange-500 text-sm">View All</button>

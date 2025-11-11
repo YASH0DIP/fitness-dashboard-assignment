@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen bg-gray-100">
         {/* Sidebar (hidden on small screens) */}
         <div
           className={`fixed inset-y-0 left-0 z-40 transform bg-white shadow-md transition-transform duration-300 lg:relative lg:translate-x-0 ${

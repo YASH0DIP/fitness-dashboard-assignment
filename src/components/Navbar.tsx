@@ -1,4 +1,4 @@
-import { Search, Bell, Menu } from "lucide-react";
+import { Search, Bell, Menu, Settings } from "lucide-react";
 
 interface NavbarProps {
   onMenuClick?: () => void;
@@ -32,7 +32,8 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
             className="pl-9 pr-3 py-2 rounded-md bg-gray-100 focus:outline-none"
           />
         </div>
-        <Bell className="text-gray-600 cursor-pointer" />
+        <Bell className="text-gray-600 cursor-pointer"/>
+        <Settings className="text-gray-600 cursor-pointer"/>
         <img
           src="https://randomuser.me/api/portraits/women/1.jpg"
           alt="User"
