@@ -10,7 +10,7 @@ interface CardProps {
 
 export default function Card({ title, value, icon, color }: CardProps) {
   return (
-    <div className={clsx("rounded-xl p-4 text-white flex-1", color)}>
+    <div className={clsx("rounded-xl p-3 sm:p-4 text-white flex-1", color)}>
       <div className="flex items-center justify-between">
         <div>
           <h3 className="text-sm opacity-80">{title}</h3>
